@@ -11,17 +11,29 @@ abstract class Component {
         setSerialNumber(serialNumber);
     }
 
-    public void setModel(String model) {
+    String getModel() {
+        return model;
+    }
+
+    String getProducer() {
+        return producer;
+    }
+
+    String getSerialNumber() {
+        return serialNumber;
+    }
+
+    void setModel(String model) {
         checkIfModelIsNull(model);
         this.model = model;
     }
 
-    public void setProducer(String producer) {
+    void setProducer(String producer) {
         checkIfProducerIsNull(producer);
         this.producer = producer;
     }
 
-    public void setSerialNumber(String serialNumber) {
+    void setSerialNumber(String serialNumber) {
         checkIfSerialNumberIsNull(serialNumber);
         this.serialNumber = serialNumber;
     }

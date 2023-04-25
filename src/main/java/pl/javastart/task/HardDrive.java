@@ -1,6 +1,6 @@
 package pl.javastart.task;
 
-class HardDrive extends Component {
+public class HardDrive extends Component {
     private int size;
 
     public HardDrive(String model, String producer, String serialNumber, int size) {
